@@ -12,7 +12,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 import django_heroku
 
 from pathlib import Path
-
+import os
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-#$h)k%=+3*(0^#0z6oi=h$jjc#k^bo!cp)a3^o8x6#9b26edel
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    "http://localhost:3000",
+    "http://localhost:3000", # allows access to localhost:3000 - react
     "http://127.0.0.1:3000",
     "http://localhost",
     'localhost',
